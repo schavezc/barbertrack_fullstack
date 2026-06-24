@@ -20,6 +20,8 @@ public class RegisterDto
     public string Nombre { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
+    public string Rol { get; set; } = "cliente"; // "cliente" o "barbero"
+
 }
 
 [ApiController]
@@ -45,12 +47,30 @@ public class AuthController : ControllerBase
         {
             Nombre = dto.Nombre,
             Email = dto.Email,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password)
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+            Rol = dto.Rol
         };
 
         _context.Clientes.Add(cliente);
         await _context.SaveChangesAsync();
-        return Ok(new { mensaje = "Cliente registrado exitosamente" });
+
+        // Si se registra como barbero, crear perfil en tabla Barberos
+        if (dto.Rol == "barbero")
+        {
+            var barbero = new Barbero
+            {
+                Nombre = dto.Nombre,
+                Especialidad = "Por definir",
+                Precio = 0,
+                Rating = 0,
+                Ubicacion = "Por definir",
+                Disponible = false // inicia inactivo hasta completar perfil
+            };
+            _context.Barberos.Add(barbero);
+            await _context.SaveChangesAsync();
+        }
+
+        return Ok(new { mensaje = "Registro exitoso" });
     }
 
     [HttpPost("login")]
@@ -63,7 +83,7 @@ public class AuthController : ControllerBase
             return Unauthorized("Credenciales incorrectas");
 
         var token = GenerarToken(cliente);
-        return Ok(new { token, nombre = cliente.Nombre });
+        return Ok(new { token, nombre = cliente.Nombre, rol = cliente.Rol });
     }
 
     private string GenerarToken(Cliente cliente)
@@ -76,6 +96,7 @@ public class AuthController : ControllerBase
             new Claim(ClaimTypes.NameIdentifier, cliente.Id.ToString()),
             new Claim(ClaimTypes.Email, cliente.Email),
             new Claim(ClaimTypes.Name, cliente.Nombre),
+            new Claim(ClaimTypes.Role, cliente.Rol), 
         };
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],

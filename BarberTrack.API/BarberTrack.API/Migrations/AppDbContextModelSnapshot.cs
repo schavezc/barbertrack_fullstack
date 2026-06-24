@@ -108,9 +108,52 @@ namespace BarberTrack.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Rol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("BarberTrack.API.Models.Resena", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BarberoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Calificacion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comentario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaResena")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ReservaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberoId");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("ReservaId")
+                        .IsUnique();
+
+                    b.ToTable("Resenas");
                 });
 
             modelBuilder.Entity("BarberTrack.API.Models.Reserva", b =>
@@ -151,6 +194,33 @@ namespace BarberTrack.API.Migrations
                     b.ToTable("Reservas");
                 });
 
+            modelBuilder.Entity("BarberTrack.API.Models.Resena", b =>
+                {
+                    b.HasOne("BarberTrack.API.Models.Barbero", "Barbero")
+                        .WithMany()
+                        .HasForeignKey("BarberoId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BarberTrack.API.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BarberTrack.API.Models.Reserva", "Reserva")
+                        .WithOne("Resena")
+                        .HasForeignKey("BarberTrack.API.Models.Resena", "ReservaId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Barbero");
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Reserva");
+                });
+
             modelBuilder.Entity("BarberTrack.API.Models.Reserva", b =>
                 {
                     b.HasOne("BarberTrack.API.Models.Barbero", "Barbero")
@@ -178,6 +248,11 @@ namespace BarberTrack.API.Migrations
             modelBuilder.Entity("BarberTrack.API.Models.Cliente", b =>
                 {
                     b.Navigation("Reservas");
+                });
+
+            modelBuilder.Entity("BarberTrack.API.Models.Reserva", b =>
+                {
+                    b.Navigation("Resena");
                 });
 #pragma warning restore 612, 618
         }

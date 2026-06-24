@@ -5,6 +5,11 @@ using BarberTrack.API.Models;
 
 namespace BarberTrack.API.Controllers;
 
+public class CambiarEstadoDto
+{
+    public string Estado { get; set; } = string.Empty;
+}
+
 [ApiController]
 [Route("api/[controller]")]
 public class ReservasController : ControllerBase
@@ -36,6 +41,26 @@ public class ReservasController : ControllerBase
         return reserva;
     }
 
+    [HttpGet("cliente/{clienteId}")]
+    public async Task<ActionResult<IEnumerable<Reserva>>> GetReservasPorCliente(int clienteId)
+    {
+        return await _context.Reservas
+            .Include(r => r.Barbero)
+            .Where(r => r.ClienteId == clienteId)
+            .OrderByDescending(r => r.Fecha)
+            .ToListAsync();
+    }
+
+    [HttpGet("barbero/{barberoId}")]
+    public async Task<ActionResult<IEnumerable<Reserva>>> GetReservasPorBarbero(int barberoId)
+    {
+        return await _context.Reservas
+            .Include(r => r.Cliente)
+            .Where(r => r.BarberoId == barberoId)
+            .OrderByDescending(r => r.Fecha)
+            .ToListAsync();
+    }
+
     [HttpPost]
     public async Task<ActionResult<Reserva>> CrearReserva(Reserva reserva)
     {
@@ -51,6 +76,21 @@ public class ReservasController : ControllerBase
         _context.Entry(reserva).State = EntityState.Modified;
         await _context.SaveChangesAsync();
         return NoContent();
+    }
+
+    [HttpPatch("{id}/estado")]
+    public async Task<IActionResult> CambiarEstado(int id, [FromBody] CambiarEstadoDto dto)
+    {
+        var reserva = await _context.Reservas.FindAsync(id);
+        if (reserva == null) return NotFound();
+
+        var estadosValidos = new[] { "pendiente", "confirmada", "completada", "cancelada" };
+        if (!estadosValidos.Contains(dto.Estado))
+            return BadRequest("Estado no válido");
+
+        reserva.Estado = dto.Estado;
+        await _context.SaveChangesAsync();
+        return Ok(new { mensaje = $"Estado actualizado a {dto.Estado}" });
     }
 
     [HttpDelete("{id}")]

@@ -19,4 +19,7 @@ public class Reserva
     public string Hora { get; set; } = string.Empty;
     public string Estilo { get; set; } = string.Empty;
     public string Estado { get; set; } = "pendiente";
+    // pendiente → confirmada → completada → reseñada
+
+    public Resena? Resena { get; set; }
 }

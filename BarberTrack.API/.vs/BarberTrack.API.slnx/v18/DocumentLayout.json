@@ -1,37 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\",
+  "WorkspaceRootPath": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack_fullstack\\BarberTrack.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack_fullstack\\barbertrack.api\\barbertrack.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Reservas.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Clientes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Barberos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\controllers\\barberoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\controllers\\barberoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack\\barbertrack.api\\barbertrack.api\\barbertrack.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\barbertrack.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|c:\\users\\sebastian chavez\\documents\\ucsm 7mo semestre\\tecnolog\u00EDas m\u00F3viles\\teor\u00EDa\\barbertrack_fullstack\\barbertrack.api\\barbertrack.api\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C769536A-F601-8959-7CC0-67451EA3AAD7}|BarberTrack.API\\BarberTrack.API.csproj|solutionrelative:barbertrack.api\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,98 +29,48 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "BarberTrack.API\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "BarberTrack.API\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAxwB0AAAA8AAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack_fullstack\\BarberTrack.API\\BarberTrack.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BarberTrack.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack_fullstack\\BarberTrack.API\\BarberTrack.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BarberTrack.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T22:00:18.256Z",
+              "WhenOpened": "2026-06-24T05:00:16.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Reservas [Datos]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Reservas.sql",
-              "ToolTip": "dbo.Reservas [Datos]",
+              "Title": "dbo.Clientes [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Clientes.sql",
+              "ToolTip": "dbo.Clientes [Datos]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-06-05T21:55:50.184Z",
+              "WhenOpened": "2026-06-24T04:51:27.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "BarberTrack.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "BarberTrack.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T19:29:18.5Z",
+              "Title": "dbo.Barberos [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BarberTrack/True/SqlTable/dbo.Barberos.sql",
+              "ToolTip": "dbo.Barberos [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-24T04:51:16.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservasController.cs",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\ReservasController.cs",
-              "RelativeDocumentMoniker": "BarberTrack.API\\Controllers\\ReservasController.cs",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\ReservasController.cs",
-              "RelativeToolTip": "BarberTrack.API\\Controllers\\ReservasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T19:28:25.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BarberosController.cs",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\BarberosController.cs",
-              "RelativeDocumentMoniker": "BarberTrack.API\\Controllers\\BarberosController.cs",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Controllers\\BarberosController.cs",
-              "RelativeToolTip": "BarberTrack.API\\Controllers\\BarberosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T19:27:09.274Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\appsettings.json",
-              "RelativeDocumentMoniker": "BarberTrack.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\appsettings.json",
-              "RelativeToolTip": "BarberTrack.API\\appsettings.json",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-04T19:13:52.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Program.cs",
-              "RelativeDocumentMoniker": "BarberTrack.API\\Program.cs",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\Program.cs",
-              "RelativeToolTip": "BarberTrack.API\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvwsAAAAHAAAAAAAAAA==",
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack_fullstack\\BarberTrack.API\\BarberTrack.API\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "BarberTrack.API\\Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack_fullstack\\BarberTrack.API\\BarberTrack.API\\Models\\Reserva.cs",
+              "RelativeToolTip": "BarberTrack.API\\Models\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T19:06:53.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BarberTrack.API.csproj",
-              "DocumentMoniker": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\BarberTrack.API.csproj",
-              "RelativeDocumentMoniker": "BarberTrack.API\\BarberTrack.API.csproj",
-              "ToolTip": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnolog\u00EDas M\u00F3viles\\Teor\u00EDa\\barbertrack\\BarberTrack.API\\BarberTrack.API\\BarberTrack.API.csproj",
-              "RelativeToolTip": "BarberTrack.API\\BarberTrack.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-04T04:53:22.759Z"
+              "WhenOpened": "2026-06-23T19:23:44.829Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vZabQvJgWhM=",
+  "dgSpecHash": "nq6SGb89+8s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnologías Móviles\\Teoría\\barbertrack\\BarberTrack.API\\BarberTrack.API\\BarberTrack.API.csproj",
+  "projectFilePath": "C:\\Users\\SEBASTIAN CHAVEZ\\Documents\\UCSM 7mo Semestre\\Tecnologías Móviles\\Teoría\\barbertrack_fullstack\\BarberTrack.API\\BarberTrack.API\\BarberTrack.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SEBASTIAN CHAVEZ\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\SEBASTIAN CHAVEZ\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

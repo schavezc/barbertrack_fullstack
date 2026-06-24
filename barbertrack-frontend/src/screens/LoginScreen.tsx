@@ -33,7 +33,13 @@ export default function LoginScreen({ navigation }: any) {
         const res = await login(email, password);
         await AsyncStorage.setItem('token', res.data.token);
         await AsyncStorage.setItem('nombre', res.data.nombre);
-        navigation.replace('Main');
+        await AsyncStorage.setItem('rol', res.data.rol);
+
+        if (res.data.rol === 'barbero') {
+          navigation.replace('MainBarbero');
+        } else {
+          navigation.replace('Main');
+        }
       } else {
         if (!nombre.trim()) {
           Alert.alert('Error', 'Ingresa tu nombre');
@@ -104,7 +110,6 @@ export default function LoginScreen({ navigation }: any) {
             autoCapitalize="none"
           />
 
-          {/* Contraseña con ojito */}
           <View style={styles.inputContainer}>
             <TextInput
               style={styles.inputPassword}
@@ -136,6 +141,15 @@ export default function LoginScreen({ navigation }: any) {
                 </Text>
             }
           </TouchableOpacity>
+
+          {/* Botón ser barbero */}
+          <TouchableOpacity
+            style={styles.barberoBtn}
+            onPress={() => navigation.navigate('RegisterBarbero')}
+          >
+            <Text style={styles.barberoBtnText}>✂ Quiero ser Barbero en BarberTrack</Text>
+          </TouchableOpacity>
+
         </View>
 
       </View>
@@ -172,13 +186,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#1A1A1A', borderRadius: 12,
     borderWidth: 1, borderColor: '#2A2A2A',
   },
-  inputPassword: {
-    flex: 1, padding: 16, color: '#fff', fontSize: 15,
-  },
+  inputPassword: { flex: 1, padding: 16, color: '#fff', fontSize: 15 },
   ojito: { paddingHorizontal: 14 },
   btn: {
     backgroundColor: '#F5A623', borderRadius: 12,
     paddingVertical: 16, alignItems: 'center', marginTop: 8,
   },
   btnText: { color: '#000', fontSize: 16, fontWeight: '800' },
+  barberoBtn: {
+    borderWidth: 1, borderColor: '#F5A623', borderRadius: 12,
+    paddingVertical: 14, alignItems: 'center',
+  },
+  barberoBtnText: { color: '#F5A623', fontSize: 14, fontWeight: '700' },
 });

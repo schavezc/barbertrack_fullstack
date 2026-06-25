@@ -12,6 +12,7 @@ import HistorialScreen from '../screens/HistorialScreen';
 import PerfilScreen from '../screens/PerfilScreen';
 import BarberoNavigator from './BarberoNavigator';
 import RegisterBarberoScreen from '../screens/RegisterBarberoScreen';
+import DejarResenaScreen from '../screens/DejarResenaScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -66,6 +67,7 @@ export default function AppNavigator() {
         <Stack.Screen name="AR" component={ARScreen} />
         <Stack.Screen name="Perfil" component={PerfilScreen} />
         <Stack.Screen name="RegisterBarbero" component={RegisterBarberoScreen} />
+        <Stack.Screen name="DejarResena" component={DejarResenaScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

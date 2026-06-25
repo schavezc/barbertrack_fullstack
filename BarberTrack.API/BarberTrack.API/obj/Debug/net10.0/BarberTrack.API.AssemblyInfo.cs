@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarberTrack.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+226ac6bf615632834c0b21027cbf39f9052eb9e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1985fcabaf368cc7dfdd0ad1a6957a0a850bf89")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarberTrack.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarberTrack.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

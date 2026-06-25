@@ -22,10 +22,13 @@ export default function BarberoHomeScreen({ navigation }: any) {
 
     if (token) {
       const payload = JSON.parse(atob(token.split('.')[1]));
-      const id = parseInt(payload['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier']);
-      setBarberoId(id);
-      const res = await getReservasPorBarbero(id);
-      setReservas(res.data);
+      const barberoId = parseInt(payload['BarberoId']);
+      setBarberoId(barberoId);
+
+      if (barberoId && barberoId > 0) {
+        const res = await getReservasPorBarbero(barberoId);
+        setReservas(res.data);
+      }
     }
   };
 

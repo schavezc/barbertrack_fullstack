@@ -7,5 +7,6 @@ public class Cliente
     public string Email { get; set; } = string.Empty;
     public string PasswordHash { get; set; } = string.Empty;
     public string Rol { get; set; } = "cliente"; // "cliente" o "barbero"
+    public int? BarberoId { get; set; } // null si es cliente normal
     public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 }

@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_URL = 'http://192.168.0.33:5226/api';
+// Cambia esta IP según el entorno
+const DEV_IP = '10.255.5.231'; // hotspot
+
+const API_URL = `http://${DEV_IP}:5226/api`;
 
 export const api = axios.create({
   baseURL: API_URL,

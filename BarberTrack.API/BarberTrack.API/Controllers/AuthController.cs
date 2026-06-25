@@ -20,8 +20,7 @@ public class RegisterDto
     public string Nombre { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
-    public string Rol { get; set; } = "cliente"; // "cliente" o "barbero"
-
+    public string Rol { get; set; } = "cliente";
 }
 
 [ApiController]
@@ -54,7 +53,6 @@ public class AuthController : ControllerBase
         _context.Clientes.Add(cliente);
         await _context.SaveChangesAsync();
 
-        // Si se registra como barbero, crear perfil en tabla Barberos
         if (dto.Rol == "barbero")
         {
             var barbero = new Barbero
@@ -64,9 +62,13 @@ public class AuthController : ControllerBase
                 Precio = 0,
                 Rating = 0,
                 Ubicacion = "Por definir",
-                Disponible = false // inicia inactivo hasta completar perfil
+                Disponible = false
             };
             _context.Barberos.Add(barbero);
+            await _context.SaveChangesAsync();
+
+            // Vincular cliente con su perfil de barbero
+            cliente.BarberoId = barbero.Id;
             await _context.SaveChangesAsync();
         }
 
@@ -96,7 +98,8 @@ public class AuthController : ControllerBase
             new Claim(ClaimTypes.NameIdentifier, cliente.Id.ToString()),
             new Claim(ClaimTypes.Email, cliente.Email),
             new Claim(ClaimTypes.Name, cliente.Nombre),
-            new Claim(ClaimTypes.Role, cliente.Rol), 
+            new Claim(ClaimTypes.Role, cliente.Rol),
+            new Claim("BarberoId", cliente.BarberoId?.ToString() ?? "0"),
         };
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],

@@ -436,3 +436,4 @@ C:\Users\SEBASTIAN CHAVEZ\Documents\UCSM 7mo Semestre\Tecnologías Móviles\Teor
 C:\Users\SEBASTIAN CHAVEZ\Documents\UCSM 7mo Semestre\Tecnologías Móviles\Teoría\barbertrack_fullstack\BarberTrack.API\BarberTrack.API\obj\Debug\net10.0\BarberTrack.API.pdb
 C:\Users\SEBASTIAN CHAVEZ\Documents\UCSM 7mo Semestre\Tecnologías Móviles\Teoría\barbertrack_fullstack\BarberTrack.API\BarberTrack.API\obj\Debug\net10.0\BarberTrack.API.genruntimeconfig.cache
 C:\Users\SEBASTIAN CHAVEZ\Documents\UCSM 7mo Semestre\Tecnologías Móviles\Teoría\barbertrack_fullstack\BarberTrack.API\BarberTrack.API\obj\Debug\net10.0\ref\BarberTrack.API.dll
+C:\Users\SEBASTIAN CHAVEZ\Documents\UCSM 7mo Semestre\Tecnologías Móviles\Teoría\barbertrack_fullstack\BarberTrack.API\BarberTrack.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

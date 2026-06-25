@@ -745,6 +745,11 @@
             "type": "string",
             "nullable": true
           },
+          "barberoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "reservas": {
             "type": "array",
             "items": {
